@@ -3,8 +3,6 @@ import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
 import AppBar from 'material-ui/AppBar'
 import injectTapEventPlugin from 'react-tap-event-plugin';
 
-import Hello from './Hello'
-import Bottom from './Bottom'
 import TemplateName from './TemplateName'
 
 import './App.css'
@@ -16,10 +14,8 @@ class App extends Component {
     return (
     <MuiThemeProvider>
       <div className="App">
-        <AppBar title='Connection logs' />
+        <AppBar showMenuIconButton={false} title='Connection logs' />
 		<TemplateName />
-        <Hello />
-        <Bottom />
       </div>
     </MuiThemeProvider>
     )
